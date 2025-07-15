@@ -9,6 +9,15 @@ body {
   background-color: rgb(21, 42, 60);
 }
 
+#main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('assets/MultiGames2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 #center-login {
   display: grid;
   place-items: center;

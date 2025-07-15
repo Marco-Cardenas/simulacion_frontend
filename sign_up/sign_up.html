@@ -8,20 +8,23 @@
     <link rel="shortcut icon" href="../assets/MultiGames.png" type="image/x-icon">
   </head>
   <body>
-    <div id='center-login'>
-      <h2>Registrate en Multi-Games</h2>
-      <form id='form-login'>
-        <p>
-          <label for='email'>Email: </label> <br/>
-          <input type='email' name='email' id='email' placeholder='example@gmal.com'/>
-        </p>
-        <p>
-          <label for='password'>Contrase&ntilde;a: </label> <br/>
-          <input type='password' name='password' id='password' placeholder='example123.'/>
-        </p>
-      </form>
-      <button id='Registrarse'>Registrarse</button>
-    </div>
+    <main id="main">
+      <div id='center-login'>
+        <h2>Registrate en Multi-Games</h2>
+        <form id='form-login'>
+          <p>
+            <label for='email'>Email: </label> <br/>
+            <input type='email' name='email' id='email' placeholder='example@gmal.com' required/>
+          </p>
+          <p>
+            <label for='password'>Contrase&ntilde;a: </label> <br/>
+            <input type='password' name='password' id='password' placeholder='example123.' required/>
+          </p>
+          <button type="submit" id="submitLogup2" style="display: none;"></button>
+        </form>
+        <button id='Registrarse'>Registrarse</button>
+      </div>
+    </main>
   </body>
   <script src="sign_up_process.js"></script>
 </html>

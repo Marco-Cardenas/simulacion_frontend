@@ -14,27 +14,33 @@
         <h1 class="header-title">Multi-Games</h1>
       </div>
 
-      <div class="header-center">
+      <div class="header-center" style="display: none;">
         <input type="text" placeholder="Buscar juegos..." class="search-input">
       </div>
 
-      <div class="header-right">
-        <button class="cart-button">
+      <div class="header-center">
+        <button class="cart-button" id="to-shop">
           <img src="../assets/carrito.png" alt="Carrito de compras" class="cart-icon">
+        </button>
+      </div>
+
+      <div class="header-right">
+        <button class="cart-button" id="to-login-button">
+          <img src="../assets/salir.png" alt="salir" class="cart-icon">
         </button>
       </div>
     </header>
 
     <main>
+      <button id="loadGames" style="display: hidden;"></button>
 
-
-      <h1>Recomendados</h1>
-      <div id="lista-recomendados" class="wrapper">
+      <h1 id="titulo-recomendados" style="display: none;">Recomendados</h1>
+      <div id="lista-recomendados" class="wrapper" style="display: none;">
       </div>
 
 
-      <h1>Nuevos</h1>
-      <div id="lista-nuevos" class="wrapper">
+      <h1 style="display: none;">Nuevos</h1>
+      <div id="lista-nuevos" class="wrapper" style="display: none;">
       </div>
 
 
