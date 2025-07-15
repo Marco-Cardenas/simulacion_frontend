@@ -69,9 +69,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     //Endpoint a donde llegaran los datos
     const params = new URLSearchParams(window.location.search);
     const userID = params.get('u');
-    const URL_ENDPOINT = 'http://localhost:3000/api/main_page';
-    const URL_ENDPOINT2 = 'http://localhost:3000/api/myGames/' + userID;
-    const URL_ENDPOINT3 = 'http://localhost:3000/api/myList/' + userID;
+    const URL_ENDPOINT = 'https://simulacion-backend.vercel.app/api/main_page';
+    const URL_ENDPOINT2 = 'https://simulacion-backend.vercel.app/api/myGames/' + userID;
+    const URL_ENDPOINT3 = 'https://simulacion-backend.vercel.app/api/myList/' + userID;
 
     try {
       const respuesta = await fetch(URL_ENDPOINT);
@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
         const params = new URLSearchParams(window.location.search);
         const userID = params.get('u');
-        const URL_ENDPOINT = 'http://localhost:3000/api/add-carrito';
+        const URL_ENDPOINT = 'https://simulacion-backend.vercel.app/api/add-carrito';
 
         try {
           const datosAEnviar = { userID: userID, gameID: juego.classList[1] }

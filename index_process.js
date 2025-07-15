@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const datosAEnviar = { email: email, password: password };
 
     //Endpoint a donde llegaran los datos
-    const URL_ENDPOINT = 'http://localhost:3000/api/login';
+    const URL_ENDPOINT = 'https://simulacion-backend.vercel.app/api/login';
 
     try {
       const respuesta = await fetch(URL_ENDPOINT, {

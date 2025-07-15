@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   async function loadList() {
     const params = new URLSearchParams(window.location.search);
     const userID = params.get('u');
-    const URL_ENDPOINT = 'http://localhost:3000/api/myListToBuy/' + userID;
+    const URL_ENDPOINT = 'https://simulacion-backend.vercel.app/api/myListToBuy/' + userID;
     
     try {
       const respuesta = await fetch(URL_ENDPOINT);
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('Procesar-Compra').addEventListener('click', async () => {
     const params = new URLSearchParams(window.location.search);
     const userID = params.get('u');
-    const URL_ENDPOINT = 'http://localhost:3000/api/comprar-carrito/' + userID;
+    const URL_ENDPOINT = 'https://simulacion-backend.vercel.app/api/comprar-carrito/' + userID;
     
     try {
       const respuesta = await fetch(URL_ENDPOINT, {
